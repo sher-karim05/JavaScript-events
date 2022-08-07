@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="bdy">
+    <!-- Using Javascript getElementById method to change HTML text -->
+
+    <h4 id="js">What can JavaScript do?</h4>
+    <button type="button" onclick='document.getElementById("js").innerHTML ="Learning JavaScript Form W3 School"'>Click Here</button>
+    </button>
+  
+    <!-- Light on and of function using javascript -->
+
+    <h4>In this case Javascript wil change the value of src attribute </h4>
+    <button type="button" onclick="document.getElementById('myImage').src='./img/on.jpg'">Turn On Light</button>
+    <img id="myImage" src="./img/off.jpg" alt="off light">
+    <button type="button" onclick="document.getElementById('myImage').src='./img/off.jpg'">Turn Off Light</button>
+
+    <!-- Changing HTML style using javascript -->
+    <h4>What will happen when you click the button❓</h4>
+    <button type="button" onclick="document.getElementById('ljs').style.fontSize='4rem'">Click Here👆</button>
+    <b id="ljs">Learning JavaScript is Great Job😃😃</b>
+<!-- Can hide html elements -->
+    <h4>JavaScript can hide HTML elements</h4>
+    <h2 id="hide">All you need is to learn javascript</h2>
+    <button type="button" onclick="document.getElementById('hide').style.display='none'">Click to hide </button>
+
+<!-- Can show html elements -->
+    <h4>JavaScript can show HTML elements</h4>
+    <h2 id="show" style="display: none;">JavaScript Algorithms and DataStructure</h2>
+    <button type="button" onclick="document.getElementById('show').style.display='block'">click to show </button>
+
+    <!-- External javascript -->
+    <h4>Using JS in External file</h4>
+    <h2 id="extr">I am learning </h2>
+    <button type="button" onclick="myFunc()">Click Here</button>
+
+    <script src="main.js"></script>
+  </body>
+</html>
