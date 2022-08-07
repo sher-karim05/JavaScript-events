@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML EVENTS</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body style="background-color: rgb(5, 6, 5)">
+    <h2
+      style="
+        color: rgb(0, 0, 0);
+        background-color: rgb(233, 233, 233);
+        text-align: center;
+      "
+    >
+      HTML EVENTS
+    </h2>
+    <p id="time" style="color: #fff; font-size: 2rem">
+      What is the time? click to button below to check⏬
+    </p>
+
+    <button onClick="document.getElementById('time').innerHTML = Date()">
+      Time
+    </button>
+
+    <!-- 
+        COMMON HTML EVENTS
+    
+        1. onchange ---- an html element has beeb chaged
+     -->
+    <p>
+      Manipulate the entire text in the form based on the onchange for
+      functionality
+    </p>
+
+    <input
+      type="text"
+      name="txt2"
+      value="welcome"
+      onchange="func_v(this.value)"
+    />
+
+    <h2>OnMouseOver Event</h2>
+    <div
+      class="circle"
+      onmouseover="mouseMoveFn()"
+      onmouseout="mouseOutFn()"
+      onmousedown="mouseDownFn()"
+      onmouseleave="mouseLeaveFn()"
+      onmouseenter="mouseEnterFn()"
+      onmouseup="mouseUpFn()"
+      onmousemove="mouseMoveFn()"
+    ></div>
+    <p>
+      Try to move cursover over the circle, out of the circle, down the circle,
+      leave circle, enter the circle, up to circle, move inside circle
+    </p>
+
+    <script src="event.js"></script>
+  </body>
+</html>
